@@ -24,4 +24,4 @@ class Data(Resource):
 
 class Data_info(Resource):
     def get(self):
-        return {'users': list(map(lambda x: x.json(), UserModel.query.all()))}
+        return {'Data': list(map(lambda x: x.json(), UserModel.query.all()))}
